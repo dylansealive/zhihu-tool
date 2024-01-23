@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "隐藏知乎学堂直播课堂无关内容",
+	"version": "1.0",
+	"description": "隐藏知乎学堂直播课堂无关内容，专注内容",
+	"author": "sxei",
+	"icons":
+	{
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["https://www.zhihu.com/xen/training/live/room/*"],
+			"js": ["content-script.js"]
+		}
+	]
+}
