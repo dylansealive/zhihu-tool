@@ -19,6 +19,10 @@
         width: '100%'
     })
 
+    setStyle('PcPlayer-introWrapper-', {
+        width: '100%'
+    })
+
     setStyle('PcLive-player-', {
         width: 'calc(100% - 306px)'
     })
@@ -34,7 +38,7 @@
     function setStyle(str, attr) {
         // 找到所有具有指定类名的元素
         let elements = document.querySelectorAll('[class^=' + str + ']');
-        // 遍历找到的元素并隐藏它们
+        // 遍历找到的元素并设置样式
         for (let i = 0; i < elements.length; i++) {
             // console.log(elements[i])
 
